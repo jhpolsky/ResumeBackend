@@ -21,6 +21,7 @@ Resources:
       Environment:
         Variables:
           TABLE_NAME: !Ref VisitorCountTable
+          ALLOWED_ORIGIN: https://jhpolsky.com
 
   VisitorCountTable:
     Type: AWS::DynamoDB::Table
